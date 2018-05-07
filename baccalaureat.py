@@ -1,6 +1,7 @@
 import time
 import string
 import random
+import os
 
 categories = ['girl_name', 'boy_name', 'job', 'color']
 players = []
@@ -31,3 +32,4 @@ for player in players:
     print(player + " it's your turn !")
     for category in categories:
         raw_input(category + ": ")
+    os.system('cls' if os.name == 'nt' else 'clear')
